@@ -6,13 +6,6 @@ from MashaRoBot import BOT_ID, MONGO_DB_URI
 from MashaRoBot import telethn as tbot
 from MashaRoBot.events import register
 
-client = MongoClient()
-client = MongoClient(MONGO_DB_URI)
-db = client["darkuserbot"]
-approved_users = db.approve
-dbb = client["darkuserbot"]
-poll_id = dbb.pollid
-
 
 async def is_register_admin(chat, user):
     if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
