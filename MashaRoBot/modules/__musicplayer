@@ -1,0 +1,19 @@
+__help__ = """
+*Telegram Voice Chat Music Player* 🎵
+
+*Commands*
+
+❍ /play reply to youtube link or mp3 file: plays the song on group voice chat.
+❍ /deezer song name: plays the song via Deezer.
+❍ /saavn song name: plays the song via JioSaavn.
+❍ /ut song name: plays the song via YouTube.
+❍ /pause: pause the music play.
+❍ /resume: resume the paused music play.
+❍ /skip: skip the playing music.
+❍ /end: ends the music play.
+❍ /admincache: Updates admin info of your group. Try if bot isn't recognize admin
+
+1) First add @BhabhiRobot to your group and give admin rights.
+2) Then add @BhabhiAssistant account to your group.
+"""
+__mod_name__ = "MusicPlayer"
