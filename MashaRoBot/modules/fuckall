@@ -14,6 +14,11 @@ from MashaRoBot import dispatcher, OWNER_ID, LOGGER
 from MashaRoBot.modules.disable import DisableAbleCommandHandler
 
 @run_async
+@connection_status
+@bot_admin
+@can_restrict
+@user_admin
+@user_can_ban
 def banall(update: Update, context: CallbackContext) -> str:
     args = context.args
     bot = context.bot
