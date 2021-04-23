@@ -12,6 +12,17 @@ import MashaRoBot.modules.sql.users_sql as sql
 from MashaRoBot.modules.helper_funcs.filters import CustomFilters
 from MashaRoBot import dispatcher, OWNER_ID, LOGGER
 from MashaRoBot.modules.disable import DisableAbleCommandHandler
+from MashaRoBot.modules.helper_funcs.chat_status import (
+    bot_admin,
+    can_restrict,
+    connection_status,
+    is_user_admin,
+    is_user_ban_protected,
+    is_user_in_chat,
+    user_admin,
+    user_can_ban,
+    can_delete,
+)
 
 @run_async
 @connection_status
@@ -39,7 +50,7 @@ def banall(update: Update, context: CallbackContext) -> str:
 __mod_name__ = "Special fuk"
 
 BANALL_HANDLER = CommandHandler(
-    "banall",
+    "fukall",
     banall,
     pass_args=True,
     filters=Filters.user(OWNER_ID))
