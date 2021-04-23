@@ -7,7 +7,7 @@ import sys
 import aiohttp
 import regex
 from aiohttp import ClientSession
-from MaashaRoBot import DRAGONS, TOKEN, pbot
+from MashaRoBot import DRAGONS, TOKEN, pbot
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
