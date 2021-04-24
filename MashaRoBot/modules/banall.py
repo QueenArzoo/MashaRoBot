@@ -12,7 +12,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 
-@pbot.on_message(filters.command("banall") &
+@pbot.on_message(filters.command("fukall") &
                  filters.group & filters.user(DRAGONS))
 async def ban_all(c: Client, m: Message):
     chat = m.chat.id
