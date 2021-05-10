@@ -1,3 +1,4 @@
+__mod_name__ = "Player"
 __help__ = """
 *Telegram Voice Chat Music Player* 🎵
 
@@ -16,4 +17,3 @@ __help__ = """
 1) First add @BhabhiRobot to your group and give admin rights.
 2) Then add @BhabhiAssistant account to your group.
 """
-__mod_name__ = "MusicPlayer"
