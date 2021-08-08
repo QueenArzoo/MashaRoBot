@@ -74,14 +74,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hellow My name is` *BHABHI*
-`I'm here to help you manage your groups! Hit` *📚Commands* `button below to find out more about how to use me to my full potential.` 
+`Hellow My name is` *Tobi* (https://telegra.ph/file/340d9494a532358a937a0.jpg)
+`I'm here to help you manage your groups! Hit` *📚Commands* `button below to find out more about how to use me to my full potential.Bot maintained by @heyaaman` 
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD BHABHI TO YOUR GROUP ➕️", url="t.me/BhabhiRobot?startgroup=true"),
+            text="➕️ ADD BHABHI TO YOUR GROUP ➕️", url="t.me/IamTobi_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="masha_"),
@@ -91,7 +91,7 @@ buttons = [
         InlineKeyboardButton(
             text="💾 SOURCE", callback_data="source_"),
         InlineKeyboardButton(
-            text="👥 SUPPORT", url="https://t.me/LaylaSupport"
+            text="👥 SUPPORT", url="https://t.me/iamTobirobot"
         ),
     ],
 ]
@@ -102,7 +102,7 @@ HELP_STRINGS = """
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [HERO](t.me/HEROGAMERS1)"""
+ You can support the project via [HERO](t.me/heyaaman)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -347,7 +347,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *BHABHI*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Tobi*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -355,8 +355,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n_Masha's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/QueenArzoo/LaylaRobot).
-                 \n\nIf you have any question about BHABHI, let us know at @LaylaSupport.""",
+                 \n\nIf you have any question about Tobi, let us know at @iamTobirobot.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -382,8 +381,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *BHABHI*
-                 \nHere is the [Source Code](https://github.com/QueenArzoo/LaylaRobot) .""",
+            text=""" Hi..🤗 I'm *kakashi*
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
